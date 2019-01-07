@@ -11,6 +11,7 @@
 	aa       = !echo 'git add .' && git add .
 	c        = !echo 'git commit -m' && git commit -m
 	co       = !echo 'git checkout' && git checkout
+	rb       = !echo 'git rebase' && git rebase
 	amend 	 = !echo 'git commit --amend --no-edit' && commit --amend --no-edit
 	amendall = !echo 'git add . && git commit --amend --no-edit' && git add . && git commit --amend --no-edit
 	syncwith = !echo 'git pull --rebase origin' && git pull --rebase origin
