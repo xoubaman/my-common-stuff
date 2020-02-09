@@ -1,35 +1,41 @@
 [user]
-	email = xoubaman@gmail.com
 	name = Carlos Gándara
+	email = xoubaman@gmail.com
 
 [core]
 	excludesfile = ~/.gitignore_global
 
 [alias]
-
-    s        = !echo 'git status -s' && git status -s
+	s        = !echo 'git status -s' && git status -s
 	aa       = !echo 'git add .' && git add .
 	c        = !echo 'git commit -m' && git commit -m
 	co       = !echo 'git checkout' && git checkout
 	rb       = !echo 'git rebase' && git rebase
-	amend 	 = !echo 'git commit --amend --no-edit' && commit --amend --no-edit
+	rbi      = !echo 'git rebase -i' && git rebase -i
+	rba      = !echo 'git rebase --abort' && git rebase --abort
+	rbc      = !echo 'git rebase --continue' && git rebase --continue
+	rbs      = !echo 'git rebase --skip' && git rebase --skip
+	amend    = !echo 'git commit --amend --no-edit' && commit --amend --no-edit
 	amendall = !echo 'git add . && git commit --amend --no-edit' && git add . && git commit --amend --no-edit
 	syncwith = !echo 'git pull --rebase origin' && git pull --rebase origin
 
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit
 
 [pull]
-    rebase = true
+	rebase = true
+
+[push]
+	default = simple
 
 [rerere]
-    enabled = true
+	enabled = true
 
 [fetch]
 	prune = true
 	pruneTags = true
 
 [color]
-    ui = true
+	ui = true
 
 [help]
-    autocorrect = 5    
+	autocorrect = 5
