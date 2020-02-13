@@ -8,6 +8,6 @@ then
     echo "Updating system files"
     for i in "${DOTFILES[@]}"
     do
-        cp ${i} ~/${i} && echo "Updated ${i}"
+        cp ./dotfiles/${i} ~/${i} && echo "Updated ${i}"
     done
 fi

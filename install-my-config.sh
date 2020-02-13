@@ -3,8 +3,8 @@
 echo ">>>>>>>>> ಠ_ಠ -(Let's do this!)"
 echo ">>>>>>>>> ᕦ(ò_óˇ)ᕤ -(Installing packages)"
 sudo apt update
-sudo apt upgrade
-sudo apt install \
+sudo apt -y upgrade
+sudo apt -y install  \
     git \
     htop \
     vim \
@@ -24,7 +24,7 @@ echo ">>>>>>>>> ୧༼ಠ益ಠ༽୨ -(Installing Docker)"
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
   sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu disco stable"
   sudo apt update
-  sudo apt install docker-ce docker-ce-cli containerd.io
+  sudo apt -y install docker-ce docker-ce-cli containerd.io
   echo ">>>>>>>>> ୧༼ಠ益ಠ༽୨ -(Post installation steps with the group, user and stuff. Requires log out and in afterwards)"
   sudo groupadd docker
   sudo usermod -aG docker $USER
@@ -39,7 +39,7 @@ echo ">>>>>>>>> ᕕ(ಠ_ಠ)ᕗ -(Installing Oh My Zsh)"
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-echo ">>>>>>>>> •‿• -(Installing PhpStorm)"
-  snap install phpstorm
+echo ">>>>>>>>> •‿• -(Installing PhpStorm and Slack)"
+  snap install phpstorm slack
 
 echo ">>>>>>>>> (-■_■) Good to go!"

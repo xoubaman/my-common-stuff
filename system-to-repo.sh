@@ -8,6 +8,6 @@ then
     echo "Updating repository files"
     for i in "${DOTFILES[@]}"
     do
-        cp ~/${i} ./${i} && echo "Updated ${i}"
+        cp ~/${i} ./dotfiles/${i} && echo "Updated ${i}"
     done
 fi
