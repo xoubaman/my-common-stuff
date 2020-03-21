@@ -1,24 +1,4 @@
 #!/usr/bin/env bash
-
-echo ">>>>>>>>> ಠ_ಠ -(Let's do this!)"
-echo ">>>>>>>>> ᕦ(ò_óˇ)ᕤ -(Installing packages)"
-sudo apt update
-sudo apt -y upgrade
-sudo apt -y install  \
-    git \
-    htop \
-    vim \
-    terminator \
-    vlc \
-    zsh \
-    fonts-powerline \
-    fonts-font-awesome \
-    apt-transport-https \
-    ca-certificates \
-    curl gnupg-agent \
-    software-properties-common \
-    net-tools
-
 echo ">>>>>>>>> ୧༼ಠ益ಠ༽୨ -(Installing Docker)"
   echo ">>>>>>>>> ୧༼ಠ益ಠ༽୨ -(I am using 'disco' instead of output from 'lsb_release -cs' because incompatibility with Ubuntu 19:10"
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
@@ -34,12 +14,3 @@ echo ">>>>>>>>> ୧༼ಠ益ಠ༽୨ -(Installing Docker)"
 echo ">>>>>>>>> ᕕ(ᐛ)ᕗ -(Installing Docker Compose v1.25.3)"
   sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
   sudo chmod +x /usr/local/bin/docker-compose
-
-echo ">>>>>>>>> ᕕ(ಠ_ಠ)ᕗ -(Installing Oh My Zsh)"
-  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-
-echo ">>>>>>>>> •‿• -(Installing PhpStorm and Slack)"
-  snap install phpstorm slack
-
-echo ">>>>>>>>> (-■_■) Good to go!"

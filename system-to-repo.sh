@@ -4,7 +4,7 @@ read -p "Update repository files with the ones in current system? [y/n] " -n 1 -
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    source ./file-list.sh
+    source ./dotfile-list.sh
     echo "Updating repository files"
     for i in "${DOTFILES[@]}"
     do
