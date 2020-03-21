@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-
+sudo apt update
+sudo apt -y upgrade
 sudo apt -y install  \
-    git \
     htop \
     vim \
-    terminator \
-    vlc \
     zsh \
+    terminator \
+    git \
+    vlc \
     fonts-powerline \
     fonts-font-awesome \
     apt-transport-https \

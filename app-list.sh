@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
 APPS=(
-    update-and-upgrade.sh
-    apt-apps.sh
+    apt-packages.sh
     docker.sh
-    oh-my-zsh.sh
     snap-apps.sh
-    dotfiles.sh
+    oh-my-zsh.sh
 )

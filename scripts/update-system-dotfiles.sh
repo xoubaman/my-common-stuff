@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-read -p "Update system files with repository ones? [y/n] " -n 1 -r
+read -p "Update system dotfiles with the repository ones? [y/n] " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then

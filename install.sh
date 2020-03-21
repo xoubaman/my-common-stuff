@@ -5,12 +5,10 @@ echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
   echo ">>>>>>>>> ಠ_ಠ -(Let's do this!)"
-  source ./app-list.sh
-  echo "Updating system files"
-  for i in "${APPS[@]}"
-  do
-      source ./apps/${i}
+      source scripts/install-apps.sh
   done
 fi
+
+source scripts/update-system-dotfiles.sh
 
 echo ">>>>>>>>> (-■_■) Good to go!"
