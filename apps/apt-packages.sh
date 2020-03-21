@@ -6,7 +6,6 @@ sudo apt -y install  \
     vim \
     zsh \
     terminator \
-    git \
     vlc \
     fonts-powerline \
     fonts-font-awesome \
@@ -15,3 +14,5 @@ sudo apt -y install  \
     curl gnupg-agent \
     software-properties-common \
     net-tools
+
+sudo apt autoremove -y
