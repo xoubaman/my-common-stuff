@@ -2,7 +2,7 @@
 
 APPS=(
     apt-packages.sh
-#    docker.sh
+    docker.sh
     snap-and-installer-apps.sh
-#    oh-my-zsh.sh
+    oh-my-zsh.sh
 )

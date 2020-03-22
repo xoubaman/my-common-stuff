@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-source "${DIR}"/scripts/io.sh
+source "${DIR}/scripts/io.sh"
 
 step "Install packages and applications"
 source ./app-list.sh
@@ -9,4 +9,5 @@ do
   step "Installing ${i}"
   source ./apps/${i}
 done
-#source ./scripts/update-system-dotfiles.sh
+
+source "${DIR}/scripts/symlink-dotfiles.sh"
