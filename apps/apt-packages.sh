@@ -15,6 +15,8 @@ sudo apt -y install ca-certificates
 sudo apt -y install curl gnupg-agent
 sudo apt -y install software-properties-common
 sudo apt -y install net-tools
+sudo apt -y install wallch
+sudo apt -y install libpango1.0-0 #Dropbox
 sudo apt -y install fonts-powerline #Zsh theme
 sudo apt -y install fonts-font-awesome #Zsh theme
 sudo apt -y install libxcb-xtest0 #Zoom

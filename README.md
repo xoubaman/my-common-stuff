@@ -2,7 +2,7 @@
 
 Repository with all the crap I like to have consistently across the computers I use.
 
-Absolutely no warranty the shitty bash scripts included will work for you. They barely do for me.
+Absolutely no warranty it will work outside of a fresh Ubuntu installation.
 
 ## Requirements
 * Ubuntu (tested in 19.10)
@@ -16,5 +16,4 @@ It will run all the scripts listed in `app-list.sh` and symlink all the files li
 Symlinking the dotfiles can be done separately running `scripts/symlink-dotfiles.sh`.
 
 ## TODO
-* Install Source Code Pro fonts
 * Advanced Ubuntu tweaks, specially removing the shortcuts that overlap with JetBrains products.
