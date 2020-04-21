@@ -8,6 +8,8 @@
 [alias]
 	s        = !echo 'git status -s' && git status -s
 	aa       = !echo 'git add .' && git add .
+	b        = !echo 'git branch' && git branch
+	bl       = !echo 'git branch list using bat' && git branch | bat
 	c        = !echo 'git commit -m' && git commit -m
 	co       = !echo 'git checkout' && git checkout
 	rb       = !echo 'git rebase' && git rebase
