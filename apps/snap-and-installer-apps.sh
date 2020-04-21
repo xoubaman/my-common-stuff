@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+substep "Installing lsd"
+sudo snap install lsd
+success
+
 substep "Installing Gimp"
 sudo snap install gimp
 success
