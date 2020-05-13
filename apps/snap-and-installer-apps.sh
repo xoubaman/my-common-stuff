@@ -8,8 +8,8 @@ substep "Installing Gimp"
 sudo snap install gimp
 success
 
-substep "Installing PhpStorm"
-sudo snap install phpstorm --classic
+substep "Installing Idea"
+sudo snap install intellij-idea-ultimate --classic
 success
 
 substep "Installing Slack"
@@ -17,9 +17,7 @@ sudo snap install slack --classic
 success
 
 substep "Installing Zoom"
-wget -O ~/Downloads/zoom.deb https://zoom.us/client/latest/zoom_amd64.deb
-sudo dpkg -i ~/Downloads/zoom.deb
-unlink ~/Downloads/zoom.deb
+sudo snap install zoom-client
 success
 
 substep "Installing Dropbox"
