@@ -15,6 +15,7 @@ sudo apt -y install htop
 sudo apt -y install net-tools
 sudo apt -y install software-properties-common
 sudo apt -y install terminator
+sudo apt -y install transmission
 sudo apt -y install vim
 sudo apt -y install vlc
 sudo apt -y install zsh
