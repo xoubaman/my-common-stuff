@@ -10,7 +10,7 @@
 	aa       = !echo 'git add .' && git add .
 	b        = !echo 'git branch' && git branch
 	bl       = !echo 'git branch list with cat' && git branch | cat
-	c        = !echo 'git commit -m' && git commit -m
+	c        = !echo 'git add . && git commit -m' && git add . && git commit -m
 	co       = !echo 'git checkout' && git checkout
 	pl       = !echo 'git pull' && git pull
 	ps       = !echo 'git push' && git push
